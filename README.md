@@ -58,6 +58,9 @@ projeto/
 ```
 
 ## 🚀 Como Executar
+1. Acesse dp3d3733.github.io/TrabalhoDesenvolvimentoWebUninter
+
+ou
 
 1. Baixe ou clone o repositório
 2. Abra o arquivo `porfolio.html` em qualquer navegador
