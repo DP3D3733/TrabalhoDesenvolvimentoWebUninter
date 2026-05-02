@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Contato</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/script.js" defer></script>
+</head>
+
+<body onload="ajustaBody()">
+    <di id="toastMessage">Mensagem enviada com sucesso!</di>
+    <img src="/styles/img/modoEscuro.svg" alt="Símbolo do botão do modo escuro" class="modoEscuroToggle" onclick="toggleDarkMode()">
+    <div class="menu">
+        <button class="menu" onclick="window.location.href='sobre.html'">Sobre mim</button>
+        <button class="menu" onclick="window.location.href='formacao.html'">Formação</button>
+        <button class="menu" onclick="window.location.href='portfolio.html'">Portfólio</button>
+        <button class="menu ativo" onclick="window.location.href='contato.html'">Contato</button>
+    </div>
+    <h1>Contato</h1>
+    <div class="corpo">
+        <p>Preencha os campos abaixo caso deseje me contatar:</p>
+        <input oninput="limpaMsgErro(this)" type="text" name="Nome" id="nome" placeholder="Nome..."><br>
+        <span id="errorMessageNome" class="errorMessage">Preencha o campo nome corretamente.<br></span>
+        <input oninput="limpaMsgErro(this)" type="email" name="E-mail" id="email" placeholder="E-mail..."><br>
+        <span id="errorMessageEmail" class="errorMessage">Preencha o campo e-mail corretamente.<br></span>
+        <textarea oninput="limpaMsgErro(this)" rows="10" name="Mensagem" id="mensagem" placeholder="Mensagem..."></textarea><br>
+        <span id="errorMessageMensagem" class="errorMessage">Preencha o campo mensagem corretamente.<br></span>
+        <input type="button" value="Enviar" onclick="enviarFormulario()">
+    </div>
+</body>
+
+</html>

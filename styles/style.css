@@ -1,0 +1,204 @@
+body {
+    background-color: #E6EEC9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body.modoEscuro {
+    background-color: #091413;
+}
+
+.modoEscuroToggle {
+    position: absolute;
+    height: 4vh;
+    right: 1vw;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(3%) saturate(7238%) hue-rotate(140deg) brightness(94%) contrast(96%);
+    cursor: pointer;
+}
+
+body.modoEscuro .modoEscuroToggle {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(51%) saturate(372%) hue-rotate(108deg) brightness(93%) contrast(90%);
+}
+
+.modoEscuroToggle:hover {
+    transform: scale(110%);
+    filter: brightness(0) saturate(100%) invert(64%) sepia(24%) saturate(342%) hue-rotate(89deg) brightness(93%) contrast(89%);
+}
+
+body.modoEscuro .modoEscuroToggle:hover {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(6%) saturate(1257%) hue-rotate(92deg) brightness(94%) contrast(90%);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 10px;
+}
+
+.menu button {
+    background-color: #35858E;
+    color: #E6EEC9;
+    padding: 0.7vh;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0px;
+}
+
+body.modoEscuro .menu button {
+    background-color: #285A48;
+    color: #B0E4CC;
+}
+
+.menu button.ativo {
+    background-color: #23555c;
+    font-weight: bold;
+}
+
+body.modoEscuro .menu button.ativo {
+    background-color: #53a1ac;
+    color: #141b18;
+}
+
+.menu button:hover {
+    background-color: #7DA78C;
+    transform: scale(110%);
+}
+
+.corpo {
+    background-color: #35858E;
+    height: 75vh;
+    width: 80vw;
+    overflow-y: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    padding-top: 30px;
+    color: #E6EEC9;
+    border-radius: 20px;
+}
+
+body.modoEscuro .corpo {
+    background-color: #285A48;
+    color: #B0E4CC;
+}
+
+#perfilImg {
+    height: 20vh;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 5px;
+    text-indent: 1.5em;
+}
+
+h1 {
+    margin-left: 10vw;
+    margin-bottom: 10px;
+    color: #35858E;
+}
+
+h3 {
+    margin-left: 1vw;
+    margin-bottom: 0;
+}
+
+body.modoEscuro h1 {
+    color: #B0E4CC;
+}
+
+.imgTrabalhosRealizados{
+    height: 20vh;
+    width: 30vh;
+}
+
+a:link {
+    color: #E6EEC9; /* normal */
+}
+
+a:visited {
+    color: #E6EEC9; /* já visitado */
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 15px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: linear-gradient(180deg, #35858E, #8bdce6, #35858E);
+}
+
+body.modoEscuro ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #285A48, #8bdce6, #285A48);
+}
+
+input, textarea{
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 3vw;
+    width: 50vw;
+    border-radius: 10px;
+    border: 0;
+}
+
+input[type='button'] {
+    width: fit-content;
+    background-color: #fafafa;
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    background-color: #23555c;
+    font-weight: bold;
+    color: #B0E4CC;
+}
+
+input.erro, textarea.erro{
+    border: 2px solid red;
+    outline: none;
+}
+
+input.erro:focus, textarea.erro:focus{
+    box-shadow: 0 0 5px red;
+}
+
+.errorMessage{
+    color:#ff7a7a;
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 3vw;
+    display: none;
+}
+
+.errorMessage.visivel {
+    display: block;
+}
+
+#toastMessage {
+    background-color: #52f7ba;
+    padding: 10px;
+    border: 4px solid green;
+    display: none;
+    position: absolute;
+}
+
+#toastMessage.visivel{
+    display: flex;
+}
