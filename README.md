@@ -37,6 +37,7 @@ O foco principal foi aplicar conceitos fundamentais de desenvolvimento front-end
 - Estilização personalizada (incluindo scrollbar e efeitos visuais)
 
 ## 📂 Estrutura do Projeto
+```
 projeto/
 │
 ├── pages/
@@ -54,6 +55,7 @@ projeto/
 │ └── script.js
 │
 └── README.md
+```
 
 ## 🚀 Como Executar
 
